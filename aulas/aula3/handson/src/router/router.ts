@@ -1,15 +1,15 @@
-// modulo de rotas, arquivo router.ts
-
-// exemplo do modulo de router
-import { Router } from "express";
+import { Router } from 'express';
+import mainController from '../controller/main';
 const router = Router();
 
-router.get("/", (req, res) => {
-   res.send("Pagina inicial de rotas");
-})
+// Main Controller
+router.get('/', mainController.index);
+router.get('/lorem', mainController.lorem);
+router.get('/bemvindo/:nome', mainController.bemvindo);
+router.get('/hb1', mainController.hb1);
+router.get('/hb2', mainController.hb2);
+router.get('/hb3', mainController.hb3);
+router.get('/hb4', mainController.hb4);
 
-router.get("/sobre", (req, res) => {
-   res.send("Pagina sobre");
-})
-
+// User Controller
 export default router;

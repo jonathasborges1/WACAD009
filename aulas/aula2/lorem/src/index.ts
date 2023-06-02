@@ -22,22 +22,11 @@ app.get('/', (req, res) => {
   }
 });
 
-// app.get('/', (req, res) => {
-//   try {
-//     const filePath = path.join(__dirname, 'public', 'index.html');
-//     const fileContent = fs.readFile(filePath, 'utf8');
-//     res.send(fileContent);
-//   } catch (error) {
-//     console.error(error);
-//     res.status(500).send('Internal Server Error');
-//   }
-// });
 
-
-app.get('/script.js', async (req, res) => {
+app.get('/script.js', (req, res) => {
   try {
     const filePath = path.join(__dirname, 'public', 'script.js');
-    const fileContent = await fs.readFileSync(filePath, 'utf8');
+    const fileContent =  fs.readFileSync(filePath, 'utf8');
     res.setHeader('Content-Type', 'application/javascript');
     res.send(fileContent);
   } catch (error) {
@@ -46,10 +35,10 @@ app.get('/script.js', async (req, res) => {
   }
 });
 
-app.get('/style.css', async (req, res) => {
+app.get('/style.css',  (req, res) => {
   try {
     const filePath = path.join(__dirname, 'public', 'style.css');
-    const fileContent = await fs.readFileSync(filePath, 'utf8');
+    const fileContent =  fs.readFileSync(filePath, 'utf8');
     res.setHeader('Content-Type', 'text/css');
     res.send(fileContent);
   } catch (error) {
