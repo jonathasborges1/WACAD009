@@ -1,0 +1,13 @@
+{"timestamp":"2023-05-31T00:31:54.090Z","ip":"::ffff:127.0.0.1","url":"/?logFormat=JSON"}
+{"timestamp":"2023-05-31T00:32:36.369Z","ip":"::ffff:127.0.0.1","url":"/?logFormat=JSON"}
+{"timestamp":"2023-05-31T00:32:50.998Z","ip":"::ffff:127.0.0.1","url":"/?logFormat=JSON"}
+{"timestamp":"2023-05-31T00:33:21.111Z","ip":"::ffff:127.0.0.1","url":"/?logFormat=JSON"}
+2023-05-31T00:33:37.731Z,::ffff:127.0.0.1,/?logFormat=CSV
+2023-05-31T00:33:52.327Z,::ffff:127.0.0.1,/?logFormat=CSV
+"2023-05-31T00:35:11.124Z,::ffff:127.0.0.1,/?logFormat=CSV"
+"2023-05-31T00:35:17.875Z,::ffff:127.0.0.1,/?logFormat=CSV"
+"2023-05-31T00:48:39.011Z,::ffff:127.0.0.1,/?logFormat=completo,1.1,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
+{"timestamp":"2023-05-31T00:48:51.139Z","ip":"::ffff:127.0.0.1","url":"/?logFormat=simples"}
+{"timestamp":"2023-05-31T00:55:23.897Z","ip":"::ffff:127.0.0.1","url":"/?logFormat=simples"}
+"2023-05-31T00:55:34.686Z,::ffff:127.0.0.1,/?logFormat=completo,1.1,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
+"2023-05-31T00:58:28.735Z,::ffff:127.0.0.1,/?logFormat=completo,1.1,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
