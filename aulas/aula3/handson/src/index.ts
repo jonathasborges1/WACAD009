@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import validateEnv  from "./utils/validateEnv";
-// import accessLogger from './loggerPlus';
+import accessLogger from './loggerPlus';
 import logger = require("morgan");
 
 import { engine } from "express-handlebars";
@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 3333;
 const publicPath = `${process.cwd()}/public`;
 
 app.use(logger("short"));
-// app.use(accessLogger);
+app.use(accessLogger);
 
 // Exemplo de uso de middleware para tratar rotas
 app.use(router);

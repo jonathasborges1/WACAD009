@@ -4,7 +4,6 @@ import path from "path";
 import { LoremIpsum } from "lorem-ipsum";
 import { Request, Response } from 'express';
 
-
 const index = (req: Request, res: Response) => {
  res.end('Welcome to Web academy!');
 };
@@ -59,10 +58,6 @@ const lorem = (req: Request, res: Response) => {
 
    const numParagraphs = parseInt(req?.query?.numParagraphs as string);
 
-   if (isNaN(numParagraphs) || numParagraphs < 1 || numParagraphs > 10) {
-     res.status(400).send('Number of paragraphs must be between 1 and 10.');
-     return;
-   }
 
    if (numParagraphs) {
 

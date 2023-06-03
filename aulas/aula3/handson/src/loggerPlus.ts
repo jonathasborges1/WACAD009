@@ -9,7 +9,7 @@ type logFormatPlus = "simples" | "completo";
 // Middleware para salvar dados de acesso em um arquivo de log
 function accessLogger(req: Request, res: Response, next: NextFunction) {
   console.log("req.query -> ",req.query);
-  if(Object.keys(req.query).length === 0){return null;}
+  if(Object.keys(req.query).length === 0){next();return null;}
 
   // Obtenha o formato de log a partir do parâmetro
   const logFormat = req.query.logFormat as logFormatPlus; // Supondo que o parâmetro seja passado como uma query string na URL

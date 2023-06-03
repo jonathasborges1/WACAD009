@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 document.getElementById('generateBtn').addEventListener('click', async () => {
    const paragraphsInput = document.getElementById('paragraphs');
    const numParagraphs = parseInt(paragraphsInput.value);
