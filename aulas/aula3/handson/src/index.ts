@@ -38,6 +38,8 @@ app.set("view engine", "handlebars");
 app.set("views", `${__dirname}/views`);
 
 
+
+
 // Exemplo de rota com expressão regular
 app.get( /^\/(api|rest)\/.+$/, (req, res) => {
    res.send("Envio de dados da API!");
