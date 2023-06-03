@@ -58,7 +58,6 @@ app.get('/lorem', (req, res) => {
    const lorem = new LoremIpsum();
    const loremTexts = lorem.generateParagraphs(numParagraphs);
    const paragraphs = loremTexts.split('\n'); // Dividir o texto em parágrafos usando o caractere de quebra de linha
-   console.log("paragraphs > ",paragraphs);
 
    res.json(paragraphs); // Enviar o vetor de parágrafos como resposta em formato JSON
  });
